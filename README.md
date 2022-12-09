@@ -28,7 +28,7 @@ Nginx is listening on three ports:
 - 8080 (Nginx Plus API)
 
 The HTTPS server is looking for a certificate and key (`default.crt` and `default.key`)to be located in `/etc/ssl/hello`. 
-The cache is enabled for only specific file types and the purge method `PURGE` is also enabled. Tha app that was being cached for testing purposes included a `Cache-Control public, max-age=0` header so that needed to be ignored with the `proxy_ignore_headers Cache-Control` directive.
+The cache is enabled for only specific file types and the purge method `PURGE` is also enabled. The Juiceshop app used for testing purposes included a `Cache-Control public, max-age=0` header so that needed to be ignored with the `proxy_ignore_headers Cache-Control` directive.
 
 ```
 ...
